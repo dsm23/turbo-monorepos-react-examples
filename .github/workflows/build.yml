@@ -1,0 +1,48 @@
+name: Build
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      node-version: 22
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+      - name: Git Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Use Node.js ${{ env.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node-version }}
+          cache: "pnpm"
+      - name: Print versions
+        run: |
+          git --version
+          echo "node version: $(node --version)"
+          echo "pnpm version: $(pnpm --version)"
+          lsb_release -a
+      - name: Install dependencies
+        run: pnpm install
+      - name: Prettier check
+        run: pnpm run fmt.check
+      - name: Lint check
+        run: pnpm run lint --filter=[HEAD^1]
+      # - name: Unit tests
+      #   run: pnpm run test
+      # - name: Unit test coverage
+      #   run: pnpm run coverage
+      - name: build check
+        run: pnpm run build --filter=[HEAD^1]
