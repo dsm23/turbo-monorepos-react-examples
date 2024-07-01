@@ -1,0 +1,39 @@
+{
+  "name": "accordions",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --clearScreen false",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.1",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@repo/ui": "workspace:*",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
+    "prettier-plugin-css-order": "^2.1.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.3.3",
+    "vite": "^5.3.2"
+  }
+}
