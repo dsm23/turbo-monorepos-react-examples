@@ -1,8 +1,8 @@
 import { forwardRef } from "react";
 import type { ComponentPropsWithoutRef, ElementRef } from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
+import { cn } from "@repo/common-utils";
 import ChevronDownIcon from "./ChevronDownIcon";
-import cn from "~/utils";
 
 const Accordion = AccordionPrimitive.Root;
 

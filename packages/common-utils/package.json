@@ -1,0 +1,20 @@
+{
+  "name": "@repo/common-utils",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0",
+    "typescript": "^5.3.3"
+  }
+}
