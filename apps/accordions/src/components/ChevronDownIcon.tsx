@@ -1,5 +1,5 @@
 import type { FunctionComponent, SVGAttributes } from "react";
-import cn from "~/utils";
+import { cn } from "@repo/common-utils";
 
 type Props = SVGAttributes<SVGSVGElement>;
 
