@@ -3,7 +3,7 @@ import type { FunctionComponent } from "react";
 import { Transition } from "@headlessui/react";
 import { Button } from "@repo/react-ui";
 import { cn } from "@repo/common-utils";
-import ChevronDownIcon from "./ChevronDownIcon";
+import ChevronDownIcon from "~/components/chevron-down-icon";
 import type { Data } from "~/types";
 
 type Props = {
