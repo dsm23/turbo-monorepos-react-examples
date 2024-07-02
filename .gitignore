@@ -2,6 +2,7 @@
 node_modules
 .turbo
 *.log
+coverage
 dist
 dist-ssr
 *.local

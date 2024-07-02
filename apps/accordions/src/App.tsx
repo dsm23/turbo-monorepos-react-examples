@@ -1,10 +1,10 @@
-import CrapAccordian from "~/components/BarebonesAccordion";
+import CrapAccordian from "~/components/barebones-accordion";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "~/components/ShadcnAccordion";
+} from "~/components/shadcn-accordion";
 import { Data } from "~/types";
 
 const data: Data[] = [
