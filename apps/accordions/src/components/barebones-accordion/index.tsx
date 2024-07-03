@@ -41,14 +41,18 @@ const Accordian: FunctionComponent<Props> = ({ data }) => {
   return (
     <>
       <Button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
-        {enableMultiSelection ? "Dis" : "En"}able Multi Selection
+        {`${enableMultiSelection ? "Dis" : "En"}able Multi Selection`}
       </Button>
       <div>
         {data && data.length > 0 ? (
           data.map((dataItem) => (
-            <div className="border-b">
+            <div
+              className="border-b"
+              key={`${dataItem.id}-${dataItem.question}`}
+            >
               <button
                 className="flex w-full flex-1 items-center justify-between py-4 font-medium transition-all hover:underline"
+                aria-expanded={isOpen(dataItem.id)}
                 onClick={
                   enableMultiSelection
                     ? () => handleMultiSelection(dataItem.id)
