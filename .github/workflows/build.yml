@@ -40,9 +40,7 @@ jobs:
         run: pnpm run fmt.check
       - name: Lint check
         run: pnpm run lint --filter=[HEAD^1]
-      - name: Unit tests
-        run: pnpm run test --filter=[HEAD^1]
-      - name: Unit test coverage
+      - name: Unit tests and coverage
         run: pnpm run coverage --filter=[HEAD^1]
       - name: build check
         run: pnpm run build --filter=[HEAD^1]
