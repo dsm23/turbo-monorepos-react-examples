@@ -11,6 +11,9 @@
     "coverage": {
       "outputs": ["coverage/**"]
     },
+    "e2e": {
+      "outputs": ["test-results/**"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
