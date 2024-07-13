@@ -1,5 +1,7 @@
 import MenuList from "~/components/menu-list";
+import Navbar from "./components/navbar";
 import type { Data } from "~/types";
+import { ThemeProvider } from "@repo/react-ui";
 
 const menus: Data[] = [
   {
@@ -61,13 +63,16 @@ const menus: Data[] = [
 ];
 
 const App = () => (
-  <main className="container">
-    <h1 className="sr-only">Tree view Example</h1>
+  <ThemeProvider storageKey="tree-view-example">
+    <Navbar />
+    <main className="container">
+      <h1 className="sr-only">Tree view Example</h1>
 
-    <div className="tree-view-container">
-      <MenuList list={menus} />
-    </div>
-  </main>
+      <div className="tree-view-container mt-10">
+        <MenuList list={menus} />
+      </div>
+    </main>
+  </ThemeProvider>
 );
 
 export default App;
