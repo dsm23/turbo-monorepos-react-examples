@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import { ThemeProvider } from "@repo/react-ui";
 import ImageSlider from "~/components/image-slider";
+import Navbar from "./components/navbar";
 import {
   Carousel,
   CarouselContent,
@@ -52,32 +54,35 @@ const App = () => {
   }
 
   return (
-    <main className="container">
-      <h1 className="sr-only">Image slider Example</h1>
-      <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        Barebones Example
-      </h2>
+    <ThemeProvider storageKey="image-slider-example">
+      <Navbar />
+      <main className="container">
+        <h1 className="sr-only">Image slider Example</h1>
+        <h2 className="mt-16 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          Barebones Example
+        </h2>
 
-      <div className="mt-6">
-        <ImageSlider images={images} />
-      </div>
+        <div className="mt-6">
+          <ImageSlider images={images} />
+        </div>
 
-      <h2 className="mt-20 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        Shadcn/Embla example
-      </h2>
+        <h2 className="mt-16 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          Shadcn/Embla example
+        </h2>
 
-      <Carousel>
-        <CarouselContent>
-          {images.map((image) => (
-            <CarouselItem key={image.id}>
-              <img src={image.download_url} alt={image.download_url} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </main>
+        <Carousel>
+          <CarouselContent>
+            {images.map((image) => (
+              <CarouselItem key={image.id}>
+                <img src={image.download_url} alt={image.download_url} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </main>
+    </ThemeProvider>
   );
 };
 
