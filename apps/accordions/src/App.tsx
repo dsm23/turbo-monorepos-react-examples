@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@repo/react-ui";
 import CrapAccordian from "~/components/barebones-accordion";
 import {
   Accordion,
@@ -5,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "~/components/shadcn-accordion";
+import Navbar from "~/components/navbar";
 import { Data } from "~/types";
 
 const data: Data[] = [
@@ -35,26 +37,29 @@ const data: Data[] = [
 ];
 
 const App = () => (
-  <main className="container">
-    <h1 className="sr-only">Accordions Example</h1>
+  <ThemeProvider storageKey="accordions-example">
+    <Navbar />
+    <main className="container">
+      <h1 className="sr-only">Accordions Example</h1>
 
-    <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-      Barebones accordion
-    </h2>
-    <CrapAccordian data={data} />
+      <h2 className="mt-16 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+        Barebones accordion
+      </h2>
+      <CrapAccordian data={data} />
 
-    <h2 className="mt-20 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-      Shadcn/Radix accordion
-    </h2>
-    <Accordion type="single" collapsible>
-      {data.map((dataItem) => (
-        <AccordionItem key={dataItem.question} value={dataItem.id.toString()}>
-          <AccordionTrigger>{dataItem.question}</AccordionTrigger>
-          <AccordionContent>{dataItem.answer}</AccordionContent>
-        </AccordionItem>
-      ))}
-    </Accordion>
-  </main>
+      <h2 className="mt-16 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+        Shadcn/Radix accordion
+      </h2>
+      <Accordion type="single" collapsible>
+        {data.map((dataItem) => (
+          <AccordionItem key={dataItem.question} value={dataItem.id.toString()}>
+            <AccordionTrigger>{dataItem.question}</AccordionTrigger>
+            <AccordionContent>{dataItem.answer}</AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+    </main>
+  </ThemeProvider>
 );
 
 export default App;
