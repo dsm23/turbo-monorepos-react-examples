@@ -2,7 +2,7 @@ plugins:
   - prettier-plugin-css-order
   - prettier-plugin-tailwindcss
 cssDeclarationSorterOrder: smacss
-tailwindConfig: ./tailwind.config.ts
+tailwindConfig: ./tailwind.config
 tailwindFunctions:
   - clsx
   - cn
