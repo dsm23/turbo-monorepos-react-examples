@@ -32,7 +32,7 @@ const App = () => (
   <ThemeProvider storageKey="tabs-example">
     <Navbar />
     <main className="container">
-      <h1 className="sr-only">Accordions Example</h1>
+      <h1 className="sr-only">Tabs example</h1>
 
       <h2 className="mt-16 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         React tabs
