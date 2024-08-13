@@ -22,7 +22,7 @@ export default mergeConfig(
       include: [testMatchPattern],
       exclude: [...defaultExclude, "**/playwright-tests/**"],
       coverage: {
-        all: true,
+        all: false,
         include: ["src/**"],
         exclude: [
           "**/test-utils/**",
