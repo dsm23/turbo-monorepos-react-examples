@@ -12,7 +12,8 @@
       "outputs": ["coverage/**"]
     },
     "e2e": {
-      "outputs": ["test-results/**"]
+      "outputs": ["test-results/**"],
+      "env": ["PLAYWRIGHT_BROWSERS_PATH"]
     },
     "dev": {
       "cache": false,

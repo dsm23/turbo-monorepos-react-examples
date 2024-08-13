@@ -14,8 +14,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shardIndex: [1, 2, 3, 4, 5, 6]
-        shardTotal: [6]
+        shardIndex: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        shardTotal: [9]
+    container:
+      image: mcr.microsoft.com/playwright:v1.46.0-jammy
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@v2
@@ -35,14 +37,15 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
-      - name: Install Playwright Browsers
-        run: pnpm dlx playwright install --with-deps
       - name: Run Playwright tests
         run: pnpm e2e -- --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }}
+        env:
+          # Required for firefox
+          HOME: /root
       - name: Upload blob report to GitHub Actions Artifacts
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
         with:
-          name: blob-report-${{ matrix.shardIndex }}
-          path: blob-report
+          name: playwright-report-${{ matrix.shardIndex }}
+          path: apps/**/playwright-report
           retention-days: 1
