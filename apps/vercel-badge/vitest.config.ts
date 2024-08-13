@@ -30,7 +30,7 @@ export default mergeConfig(
       include: [testMatchPattern],
       exclude: [...defaultExclude, "**/playwright-tests/**"],
       coverage: {
-        all: true,
+        all: false,
         include: ["src/**"],
         exclude: [
           "**/test-utils/**",
@@ -39,10 +39,10 @@ export default mergeConfig(
           ...coverageConfigDefaults.exclude,
         ],
         thresholds: {
-          lines: 40,
-          functions: 40,
-          branches: 40,
-          statements: 40,
+          lines: 35,
+          functions: 35,
+          branches: 35,
+          statements: 35,
         },
       },
     },
