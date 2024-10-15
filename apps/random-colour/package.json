@@ -22,7 +22,7 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.46.0",
+    "@playwright/test": "^1.48.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
