@@ -6,8 +6,9 @@ pull_request_rules:
       - check-success~=analyse \([a-z]*\)
       - check-success=build
       - check-success=dependency-review
+      - check-success=gitleaks
       - check-success~=playwright-tests \(\d, \d\)
-      - "#check-success>=15"
+      - "#check-success>=16"
     actions:
       review:
         type: APPROVE
@@ -18,8 +19,9 @@ pull_request_rules:
       - check-success~=analyse \([a-z]*\)
       - check-success=build
       - check-success=dependency-review
+      - check-success=gitleaks
       - check-success~=playwright-tests \(\d, \d\)
-      - "#check-success>=15"
+      - "#check-success>=16"
     actions:
       review:
         type: APPROVE
@@ -30,8 +32,9 @@ pull_request_rules:
       - check-success~=analyse \([a-z]*\)
       - check-success=build
       - check-success=dependency-review
+      - check-success=gitleaks
       - check-success~=playwright-tests \(\d, \d\)
-      - "#check-success>=15"
+      - "#check-success>=16"
       - "#approved-reviews-by>=1"
     actions:
       merge:
