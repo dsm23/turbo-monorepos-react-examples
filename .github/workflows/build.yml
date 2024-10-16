@@ -1,16 +1,20 @@
 name: Build
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  HUSKY: 0
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      node-version: 22
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@v2
@@ -23,10 +27,11 @@ jobs:
       - uses: pnpm/action-setup@v3
         with:
           version: 9
-      - name: Use Node.js ${{ env.node-version }}
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.node-version }}
+          # We want to ensure that the Node.js version running here respects our supported versions
+          node-version-file: ".nvmrc"
           cache: "pnpm"
       - name: Print versions
         run: |
