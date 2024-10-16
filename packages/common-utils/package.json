@@ -14,7 +14,7 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^2.5.2",
-    "typescript": "^5.5.4"
+    "tailwind-merge": "^2.5.4",
+    "typescript": "^5.6.3"
   }
 }
