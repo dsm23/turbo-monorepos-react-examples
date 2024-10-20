@@ -5,6 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "lint:css": "turbo lint:css",
     "test": "turbo test",
     "coverage": "turbo coverage",
     "e2e": "turbo e2e",
