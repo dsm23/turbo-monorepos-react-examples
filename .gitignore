@@ -16,6 +16,11 @@ public/dist
 .vscode/settings.json
 .idea/
 
+# cache files
+.eslintmdcache
+.stylelintcache
+.prettiercache
+
 # playwright
 test-results/
 playwright-report/

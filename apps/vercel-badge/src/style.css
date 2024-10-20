@@ -1,3 +1,5 @@
+/* stylelint-disable custom-property-empty-line-before */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,6 +77,7 @@
   * {
     border-color: hsl(var(--border));
   }
+
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));

@@ -45,6 +45,8 @@ jobs:
         run: pnpm run fmt.check
       - name: Lint check
         run: pnpm run lint --filter=[origin/main]
+      - name: Lint css check
+        run: pnpm run lint:css --filter=[origin/main]
       - name: Unit tests and coverage
         run: pnpm run coverage --filter=[origin/main]
       - name: build check
