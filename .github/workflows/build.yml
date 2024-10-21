@@ -27,6 +27,16 @@ jobs:
       - uses: pnpm/action-setup@v3
         with:
           version: 9
+      - name: Save Lint Cache
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .turbo/cache
+            node_modules/.cache
+            .eslintmdcache
+            .stylelintcache
+            .prettiercache
+          key: cache-lint-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('.turbo/cache/**') }}
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -45,8 +55,6 @@ jobs:
         run: pnpm run fmt.check
       - name: Lint check
         run: pnpm run lint --filter=[origin/main]
-      - name: Lint css check
-        run: pnpm run lint:css --filter=[origin/main]
       - name: Unit tests and coverage
         run: pnpm run coverage --filter=[origin/main]
       - name: build check

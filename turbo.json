@@ -6,8 +6,15 @@
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": ["dist/**"]
     },
-    "lint": {},
-    "lint:css": {},
+    "lint": {
+      "outputs": []
+    },
+    "lint:css": {
+      "outputs": []
+    },
+    "lint:js": {
+      "outputs": []
+    },
     "test": {},
     "coverage": {
       "outputs": ["coverage/**"]

@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
-    "lint": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
+    "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
+    "lint": "turbo run lint:js lint:css",
     "e2e": "playwright test"
   },
   "dependencies": {
