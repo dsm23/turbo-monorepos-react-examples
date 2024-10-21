@@ -2,10 +2,6 @@ import { describe, expect, it, vi } from "vitest";
 import { render } from "~/test-utils";
 import App from "./App";
 
-interface ResizeObserverCallback {
-  (entries: ResizeObserverEntry[], observer: ResizeObserver): void;
-}
-
 const IntersectionObserverMock = vi.fn(() => ({
   disconnect: vi.fn(),
   observe: vi.fn(),
@@ -14,8 +10,8 @@ const IntersectionObserverMock = vi.fn(() => ({
 }));
 
 class ResizeObserver {
-  callback: ResizeObserverCallback;
-  constructor(callback: ResizeObserverCallback) {
+  callback: globalThis.ResizeObserverCallback;
+  constructor(callback: globalThis.ResizeObserverCallback) {
     this.callback = callback;
   }
   observe = vi.fn();

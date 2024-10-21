@@ -9,7 +9,23 @@ const App = () => {
 
   const handleCreateRandomHexColor = () => {
     // #678765
-    const hex = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    const hex = [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+    ];
     let hexColor = "#";
 
     for (let i = 0; i < 6; i++) {
@@ -47,13 +63,17 @@ const App = () => {
         <div className="isolate mt-10 flex shadow-sm">
           <Button
             className="rounded-r-none ring-1 ring-inset ring-gray-300"
-            onClick={() => setTypeOfColor("hex")}
+            onClick={() => {
+              setTypeOfColor("hex");
+            }}
           >
             Create HEX Colour
           </Button>
           <Button
             className="-ml-px rounded-none ring-1 ring-inset ring-gray-300"
-            onClick={() => setTypeOfColor("rgb")}
+            onClick={() => {
+              setTypeOfColor("rgb");
+            }}
           >
             Create RGB Colour
           </Button>

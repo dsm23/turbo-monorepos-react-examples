@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import MenuItem from "~/components/menu-item";
 import type { Data } from "~/types";
 
@@ -8,7 +8,7 @@ type Props = {
 
 const MenuList: FunctionComponent<Props> = ({ list = [] }) => (
   <ul className="menu-list-container">
-    {list && list.length
+    {list.length
       ? list.map((listItem) => <MenuItem className="ml-3" item={listItem} />)
       : null}
   </ul>

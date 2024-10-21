@@ -1,4 +1,5 @@
-import { FunctionComponent, LiHTMLAttributes, useState } from "react";
+import { useState } from "react";
+import type { FunctionComponent, LiHTMLAttributes } from "react";
 import MenuList from "~/components/menu-list";
 import MinusIcon from "~/components/minus-icon";
 import PlusIcon from "~/components/plus-icon";
@@ -24,14 +25,18 @@ const MenuItem: FunctionComponent<Props> = ({ item, ...props }) => {
     <li {...props}>
       <button className="flex items-center gap-5">
         <p>{item.label}</p>
-        {item && item.children && item.children.length ? (
-          <span onClick={() => handleToggleChildren(item.label)}>
+        {item.children?.length ? (
+          <span
+            onClick={() => {
+              handleToggleChildren(item.label);
+            }}
+          >
             {displayCurrentChildren[item.label] ? <MinusIcon /> : <PlusIcon />}
           </span>
         ) : null}
       </button>
 
-      {item?.children &&
+      {item.children &&
       item.children.length > 0 &&
       displayCurrentChildren[item.label] ? (
         <MenuList list={item.children} />

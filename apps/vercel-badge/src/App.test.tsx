@@ -2,13 +2,9 @@ import { describe, expect, it, vi } from "vitest";
 import { render } from "@testing-library/react";
 import App from "./App";
 
-interface ResizeObserverCallback {
-  (entries: ResizeObserverEntry[], observer: ResizeObserver): void;
-}
-
 class ResizeObserver {
-  callback: ResizeObserverCallback;
-  constructor(callback: ResizeObserverCallback) {
+  callback: globalThis.ResizeObserverCallback;
+  constructor(callback: globalThis.ResizeObserverCallback) {
     this.callback = callback;
   }
   observe = vi.fn();

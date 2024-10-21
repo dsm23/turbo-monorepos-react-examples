@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": "./src/index.ts"
   },
   "scripts": {
-    "lint": "eslint src/",
+    "lint": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

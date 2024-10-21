@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
-import { Object3DNode, MaterialNode } from "@react-three/fiber";
-import { MeshLineGeometry, MeshLineMaterial } from "meshline";
+import type { Object3DNode, MaterialNode } from "@react-three/fiber";
+import type { MeshLineGeometry, MeshLineMaterial } from "meshline";
 
 declare module "@react-three/fiber" {
   interface ThreeElements {

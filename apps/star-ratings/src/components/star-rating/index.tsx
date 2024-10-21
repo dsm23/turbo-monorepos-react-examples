@@ -27,9 +27,13 @@ const StarRating: FunctionComponent<Props> = ({ noOfStars = 5 }) => {
     <div className="flex gap-x-4">
       {Array.from({ length: noOfStars }, (_, i) => i + 1).map((index) => (
         <button
-          onClick={() => handleClick(index)}
-          onMouseMove={() => handleMouseEnter(index)}
-          onMouseLeave={() => handleMouseLeave()}
+          onClick={() => {
+            handleClick(index);
+          }}
+          onMouseMove={() => {
+            handleMouseEnter(index);
+          }}
+          onMouseLeave={handleMouseLeave}
           key={`star-${index}`}
         >
           <Star

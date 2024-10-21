@@ -41,7 +41,7 @@ const Form = () => {
           onChange={handleChange}
         />
 
-        <Button type="submit" className="mt-6" disabled={input?.trim() === ""}>
+        <Button type="submit" className="mt-6" disabled={input.trim() === ""}>
           Submit
         </Button>
       </form>
