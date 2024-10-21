@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { FunctionComponent } from "react";
 import ArrowLeftIcon from "../arrow-left-icon";
 import ArrowRightIcon from "../arrow-right-icon";
-import { Image } from "~/types";
+import type { Image } from "~/types";
 import { cn } from "@repo/common-utils";
 import { Button } from "@repo/react-ui";
 

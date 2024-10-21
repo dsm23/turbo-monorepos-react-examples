@@ -13,11 +13,11 @@ vi.mock("react-dom/client", () => ({
 
 describe("react tree root, main", () => {
   it("calls document.getElementById once", async () => {
-    document.getElementById = vi.fn();
+    const spy = vi.spyOn(document, "getElementById");
 
     await import("./main");
 
-    expect(document.getElementById).toHaveBeenCalledTimes(1);
-    expect(document.getElementById).toHaveBeenCalledWith("root");
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith("root");
   });
 });

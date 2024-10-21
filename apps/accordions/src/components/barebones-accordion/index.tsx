@@ -40,11 +40,15 @@ const Accordian: FunctionComponent<Props> = ({ data }) => {
 
   return (
     <>
-      <Button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
+      <Button
+        onClick={() => {
+          setEnableMultiSelection(!enableMultiSelection);
+        }}
+      >
         {`${enableMultiSelection ? "Dis" : "En"}able Multi Selection`}
       </Button>
       <div>
-        {data && data.length > 0 ? (
+        {data.length > 0 ? (
           data.map((dataItem) => (
             <div
               className="border-b"
@@ -55,8 +59,12 @@ const Accordian: FunctionComponent<Props> = ({ data }) => {
                 aria-expanded={isOpen(dataItem.id)}
                 onClick={
                   enableMultiSelection
-                    ? () => handleMultiSelection(dataItem.id)
-                    : () => handleSingleSelection(dataItem.id)
+                    ? () => {
+                        handleMultiSelection(dataItem.id);
+                      }
+                    : () => {
+                        handleSingleSelection(dataItem.id);
+                      }
                 }
               >
                 <h3>{dataItem.question}</h3>

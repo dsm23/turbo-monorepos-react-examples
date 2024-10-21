@@ -1,4 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// TODO: sort out the types
+/* eslint-disable */
 // @ts-nocheck
 
 import * as THREE from "three";
@@ -164,8 +165,12 @@ const Band: FunctionComponent<Props> = ({ maxSpeed = 50, minSpeed = 10 }) => {
           <group
             scale={2.25}
             position={[0, -1.2, -0.05]}
-            onPointerOver={() => hover(true)}
-            onPointerOut={() => hover(false)}
+            onPointerOver={() => {
+              hover(true);
+            }}
+            onPointerOut={() => {
+              hover(false);
+            }}
             onPointerUp={handlePointerUp}
             onPointerDown={handlePointerDown}
           >

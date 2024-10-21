@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "sideEffects": [
     "**/*.css"
   ],
@@ -21,7 +22,7 @@
     "clean": "rm -rf dist",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css && tsup --watch",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src/"
+    "lint": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
     "@radix-ui/react-slot": "^1.1.0",

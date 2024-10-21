@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { screen, waitForElementToBeRemoved } from "@testing-library/react";
+import {
+  screen,
+  waitFor,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
 import { render } from "~/test-utils";
 import BarebonesAccordion from ".";
 
@@ -21,7 +25,9 @@ describe("component", () => {
       expect(enableButton()).toBeInTheDocument();
       expect(disableButton()).not.toBeInTheDocument();
 
-      await enableButton()?.click();
+      enableButton()?.click();
+
+      await waitFor(disableButton);
 
       expect(enableButton()).not.toBeInTheDocument();
       expect(disableButton()).toBeInTheDocument();
@@ -47,7 +53,9 @@ describe("component", () => {
     expect(question).toBeInTheDocument();
     expect(answer()).not.toBeInTheDocument();
 
-    await question.click();
+    question.click();
+
+    await waitFor(answer);
 
     expect(answer()).toBeInTheDocument();
   });
@@ -78,13 +86,17 @@ describe("component", () => {
     expect(firstAnswer()).not.toBeInTheDocument();
     expect(secondAnswer()).not.toBeInTheDocument();
 
-    await firstQuestion.click();
+    firstQuestion.click();
+
+    await waitFor(firstAnswer);
 
     expect(firstAnswer()).toBeInTheDocument();
     expect(secondAnswer()).not.toBeInTheDocument();
 
-    await secondQuestion.click();
+    secondQuestion.click();
+
     await waitForElementToBeRemoved(firstAnswer);
+    await waitFor(secondAnswer);
 
     expect(firstAnswer()).not.toBeInTheDocument();
     expect(secondAnswer()).toBeInTheDocument();
@@ -108,7 +120,7 @@ describe("component", () => {
       />,
     );
 
-    const enableButton = screen.getByText("Enable", { exact: false });
+    const enableButton = () => screen.queryByText("Enable", { exact: false });
     const firstQuestion = screen.getByText("first question");
     const firstAnswer = () => screen.queryByText("first answer");
     const secondQuestion = screen.getByText("second question");
@@ -117,13 +129,20 @@ describe("component", () => {
     expect(firstAnswer()).not.toBeInTheDocument();
     expect(secondAnswer()).not.toBeInTheDocument();
 
-    await enableButton.click();
-    await firstQuestion.click();
+    enableButton()?.click();
+
+    await waitForElementToBeRemoved(enableButton);
+
+    firstQuestion.click();
+
+    await waitFor(firstAnswer);
 
     expect(firstAnswer()).toBeInTheDocument();
     expect(secondAnswer()).not.toBeInTheDocument();
 
-    await secondQuestion.click();
+    secondQuestion.click();
+
+    await waitFor(secondAnswer);
 
     expect(firstAnswer()).toBeInTheDocument();
     expect(secondAnswer()).toBeInTheDocument();
@@ -147,11 +166,13 @@ describe("component", () => {
 
     expect(answer()).not.toBeInTheDocument();
 
-    await question.click();
+    question.click();
 
-    expect(answer()).toBeInTheDocument();
+    await waitFor(() => {
+      expect(answer()).toBeInTheDocument();
+    });
 
-    await question.click();
+    question.click();
 
     expect(answer()).toBeInTheDocument();
   });
@@ -169,18 +190,25 @@ describe("component", () => {
       />,
     );
 
-    const enableButton = screen.getByText("Enable", { exact: false });
+    const enableButton = () => screen.queryByText("Enable", { exact: false });
     const question = screen.getByText("question");
     const answer = () => screen.queryByText("answer");
 
     expect(answer()).not.toBeInTheDocument();
 
-    await enableButton.click();
-    await question.click();
+    enableButton()?.click();
 
-    expect(answer()).toBeInTheDocument();
+    await waitForElementToBeRemoved(enableButton);
 
-    await question.click();
+    expect(enableButton()).not.toBeInTheDocument();
+
+    question.click();
+
+    await waitFor(() => {
+      expect(answer()).toBeInTheDocument();
+    });
+
+    question.click();
     await waitForElementToBeRemoved(answer);
 
     expect(answer()).not.toBeInTheDocument();

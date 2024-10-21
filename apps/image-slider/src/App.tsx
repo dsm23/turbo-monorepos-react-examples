@@ -9,7 +9,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "~/components/shadcn";
-import { Image } from "~/types";
+import type { Image } from "~/types";
+
+type Data = {
+  id: string;
+  author: string;
+  width: number;
+  height: number;
+  url: string;
+  download_url: string;
+};
 
 const url = "https://picsum.photos/v2/list";
 const page = 1;
@@ -25,7 +34,7 @@ const App = () => {
       setLoading(true);
 
       const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
-      const data = await response.json();
+      const data = (await response.json()) as Data[] | null;
 
       if (data) {
         setImages(data);
@@ -42,7 +51,9 @@ const App = () => {
 
   useEffect(() => {
     // if (url !== "") fetchImages(url);
-    fetchImages(url);
+    fetchImages(url).catch((err: unknown) => {
+      console.error(err);
+    });
   }, []);
 
   if (loading) {

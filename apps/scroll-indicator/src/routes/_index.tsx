@@ -4,6 +4,50 @@ import { json } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/node";
 import HorizontalIndicator from "~/components/indicator";
 
+type Data = {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  price: number;
+  discountPercentage: number;
+  rating: number;
+  stock: number;
+  tags: string[];
+  brand: string;
+  sku: string;
+  weight: number;
+  dimensions: {
+    width: number;
+    height: number;
+    depth: number;
+  };
+  warrantyInformation: string;
+  shippingInformation: string;
+  availabilityStatus: string;
+  reviews: {
+    rating: number;
+    comment: string;
+    date: string;
+    reviewerName: string;
+    reviewerEmail: string;
+  }[];
+  returnPolicy: string;
+  minimumOrderQuantity: number;
+  meta: {
+    createdAt: string;
+    updatedAt: string;
+    barcode: string;
+    qrCode: string;
+  };
+  images: string[];
+  thumbnail: string;
+};
+
+type Products = {
+  products: Data[];
+};
+
 const url = "https://dummyjson.com/products?limit=100";
 
 export const meta: MetaFunction = () => {
@@ -15,9 +59,9 @@ export const meta: MetaFunction = () => {
 
 export async function loader() {
   const response = await fetch(url);
-  const data = await response.json();
+  const data = (await response.json()) as Products | null;
 
-  return json(data.products);
+  return json(data?.products ?? []);
 }
 
 export function ErrorBoundary() {
@@ -71,7 +115,7 @@ const App = () => {
           Scroll Indicator
         </h1>
         <div className="data-container">
-          {data && data.length > 0
+          {data.length > 0
             ? data.map((dataItem) => (
                 <p key={`${dataItem.id}-${dataItem.title}`}>{dataItem.title}</p>
               ))

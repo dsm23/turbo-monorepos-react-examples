@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "~/components/shadcn-accordion";
 import Navbar from "~/components/navbar";
-import { Data } from "~/types";
+import type { Data } from "~/types";
 
 const data: Data[] = [
   {
