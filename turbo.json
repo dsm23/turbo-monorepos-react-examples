@@ -10,7 +10,7 @@
       "outputs": []
     },
     "lint:css": {
-      "outputs": []
+      "outputs": [".stylelintcache"]
     },
     "lint:js": {
       "outputs": []
