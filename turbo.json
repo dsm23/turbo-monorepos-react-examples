@@ -15,6 +15,10 @@
     "lint:js": {
       "outputs": []
     },
+    "lint:lint-staged": {
+      "dependsOn": ["^lint"]
+    },
+
     "test": {},
     "coverage": {
       "outputs": ["coverage/**"]

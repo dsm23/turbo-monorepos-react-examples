@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint:css": "stylelint \"**/*.css\" --max-warnings 0 --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
-    "lint": "turbo run lint:js lint:css",
+    "lint": "run-s lint:js lint:css",
     "e2e": "playwright test"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "@vitejs/plugin-react-swc": "^3.7.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "prettier-plugin-css-order": "^2.1.2",
