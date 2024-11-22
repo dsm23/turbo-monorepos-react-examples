@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useRouteError } from "@remix-run/react";
-import { json } from "@remix-run/node";
 import type { MetaFunction } from "@remix-run/node";
 import HorizontalIndicator from "~/components/indicator";
 
@@ -61,7 +60,7 @@ export async function loader() {
   const response = await fetch(url);
   const data = (await response.json()) as Products | null;
 
-  return json(data?.products ?? []);
+  return data?.products ?? [];
 }
 
 export function ErrorBoundary() {
