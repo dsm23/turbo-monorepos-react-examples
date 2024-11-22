@@ -13,17 +13,17 @@
     "fmt.check": "prettier --check ."
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/types": "^19.5.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.13.0",
-    "husky": "^9.1.6",
+    "eslint": "^9.15.0",
+    "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "prettier-plugin-css-order": "^2.1.2",
-    "turbo": "^2.2.2"
+    "turbo": "^2.3.1"
   },
   "packageManager": "pnpm@9.13.0",
   "name": "with-vite"
