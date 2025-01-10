@@ -1,7 +1,11 @@
+import type { FunctionComponent, HTMLAttributes } from "react";
+import { cn } from "@repo/common-utils";
 import { ModeToggle } from "@repo/react-ui";
 
-const Navbar = () => (
-  <nav className="bg-muted">
+type Props = HTMLAttributes<HTMLElement>;
+
+const Navbar: FunctionComponent<Props> = ({ className, ...props }) => (
+  <nav {...props} className={cn("bg-muted", className)}>
     <div className="container mx-auto">
       <div className="flex h-16 items-center justify-between">
         <div className="flex items-center">
