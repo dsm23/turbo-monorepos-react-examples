@@ -16,6 +16,6 @@
     "@repo/typescript-config": "workspace:*",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.4",
-    "typescript": "^5.7.2"
+    "typescript": "^5.8.3"
   }
 }
