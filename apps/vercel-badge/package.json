@@ -33,7 +33,7 @@
     "three": "^0.176.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.49.0",
+    "@playwright/test": "^1.52.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
