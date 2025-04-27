@@ -15,8 +15,8 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "eslint": "^9.15.0",
-    "typescript": "^5.7.2",
-    "vite": "^5.4.11"
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3"
   }
 }

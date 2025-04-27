@@ -8,9 +8,9 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "stylelint": "^16.10.0",
-    "stylelint-config-standard": "^36.0.1",
-    "stylelint-order": "^6.0.4",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0",
     "stylelint-selector-bem-pattern": "^4.0.1"
   },
   "publishConfig": {
