@@ -4,10 +4,14 @@ import type { Config } from "stylelint";
 const CUSTOM_AT_RULES = [
   // Tailwind-specific at-rules
   "apply",
+  "config",
+  "custom-variant",
   "layer",
   "responsive",
   "screen",
   "tailwind",
+  "theme",
+  "utility",
   "variants",
   // PostCSS-specific at-rules
   "define-mixin",

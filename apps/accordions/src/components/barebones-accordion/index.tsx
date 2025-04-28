@@ -81,14 +81,14 @@ const Accordian: FunctionComponent<Props> = ({ data }) => {
               <Transition show={isOpen(dataItem.id)}>
                 <div
                   className={cn(
-                    "grid transition-[grid-template-rows] duration-[200] ease-out motion-reduce:transition-none",
-                    "data-[enter]:data-[closed]:grid-rows-[0fr] data-[enter]:grid-rows-[1fr]",
-                    "data-[leave]:data-[closed]:grid-rows-[0fr] data-[leave]:grid-rows-[1fr]",
+                    "grid transition-[grid-template-rows] duration-200 ease-out motion-reduce:transition-none",
+                    "data-enter:grid-rows-[1fr] data-enter:data-closed:grid-rows-[0fr]",
+                    "data-leave:grid-rows-[1fr] data-leave:data-closed:grid-rows-[0fr]",
                   )}
                 >
                   <div className="overflow-hidden">
                     <div className="text-sm">
-                      <div className="pb-4 pt-0">{dataItem.answer}</div>
+                      <div className="pt-0 pb-4">{dataItem.answer}</div>
                     </div>
                   </div>
                 </div>

@@ -60,9 +60,10 @@ const App = () => {
       <main className="container flex h-full flex-col items-center">
         <h1 className="sr-only">Random number generator</h1>
 
-        <div className="isolate mt-10 flex shadow-sm">
+        <div className="isolate mt-10 flex shadow-lg">
           <Button
-            className="rounded-r-none ring-1 ring-inset ring-gray-300"
+            className="rounded-2xl rounded-r-none px-3"
+            variant="outline"
             onClick={() => {
               setTypeOfColor("hex");
             }}
@@ -70,7 +71,8 @@ const App = () => {
             Create HEX Colour
           </Button>
           <Button
-            className="-ml-px rounded-none ring-1 ring-inset ring-gray-300"
+            className="-ml-px rounded-none px-3"
+            variant="outline"
             onClick={() => {
               setTypeOfColor("rgb");
             }}
@@ -78,7 +80,8 @@ const App = () => {
             Create RGB Colour
           </Button>
           <Button
-            className="-ml-px rounded-l-none ring-1 ring-inset ring-gray-300"
+            className="-ml-px rounded-2xl rounded-l-none px-3"
+            variant="outline"
             onClick={
               typeOfColor === "hex"
                 ? handleCreateRandomHexColor

@@ -5,7 +5,7 @@ const Navbar = () => (
     <div className="container mx-auto">
       <div className="flex h-16 items-center justify-between">
         <div className="flex items-center">
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <img
               alt="Your Company"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
