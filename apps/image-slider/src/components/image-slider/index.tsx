@@ -27,7 +27,7 @@ const ImageSlider: FunctionComponent<Props> = ({ images }) => {
         <div className="-ml-4 flex">
           <Button
             className={cn(
-              "absolute -left-12 top-1/2 h-8 w-8 -translate-y-1/2 rounded-full",
+              "absolute top-1/2 -left-12 h-8 w-8 -translate-y-1/2 rounded-full",
             )}
             variant="outline"
             size="icon"
@@ -51,7 +51,7 @@ const ImageSlider: FunctionComponent<Props> = ({ images }) => {
 
           <Button
             className={cn(
-              "absolute -right-12 top-1/2 h-8 w-8 -translate-y-1/2 rounded-full",
+              "absolute top-1/2 -right-12 h-8 w-8 -translate-y-1/2 rounded-full",
             )}
             variant="outline"
             size="icon"
