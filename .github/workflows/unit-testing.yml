@@ -1,4 +1,4 @@
-name: Build check
+name: Unit testing
 
 on:
   push:
@@ -12,8 +12,13 @@ on:
 env:
   HUSKY: 0
 
+permissions:
+  contents: read
+  # Write permissions for pull-requests are required for creating the Jest coverage comment, comment out if you aren't using this option
+  pull-requests: write
+
 jobs:
-  build:
+  unit-testing:
     runs-on: ubuntu-24.04
     steps:
       - name: Harden Runner
@@ -42,5 +47,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build check
-        run: pnpm run build --filter=[origin/main]
+      - name: Unit & Integration tests
+        run: pnpm run coverage --filter=[origin/main]
+        env:
+          FORCE_COLOR: 1
