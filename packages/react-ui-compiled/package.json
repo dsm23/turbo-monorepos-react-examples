@@ -43,7 +43,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "tailwindcss": "4.1.7",
-    "tsup": "8.4.0",
+    "tsup": "8.5.0",
     "tw-animate-css": "1.2.9",
     "typescript": "5.8.3"
   }
