@@ -16,7 +16,7 @@
     "e2e": "playwright test"
   },
   "dependencies": {
-    "@headlessui/react": "2.2.3",
+    "@headlessui/react": "2.2.4",
     "@radix-ui/react-slot": "1.2.2",
     "@react-three/drei": "10.0.8",
     "@react-three/fiber": "9.1.2",
