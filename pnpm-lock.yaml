@@ -109,8 +109,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -243,8 +243,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -361,8 +361,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -461,8 +461,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       eslint:
         specifier: 9.27.0
         version: 9.27.0(jiti@2.4.2)
@@ -691,8 +691,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -806,8 +806,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -915,8 +915,8 @@ importers:
         specifier: 19.1.5
         version: 19.1.5(@types/react@19.1.5)
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -1042,8 +1042,8 @@ importers:
         specifier: 0.176.0
         version: 0.176.0
       '@vitejs/plugin-react-swc':
-        specifier: 3.9.0
-        version: 3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
+        specifier: 3.10.0
+        version: 3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))
       '@vitest/coverage-v8':
         specifier: 3.1.4
         version: 3.1.4(vitest@3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(msw@2.8.4(@types/node@22.15.21)(typescript@5.8.3))(yaml@2.7.1))
@@ -3066,6 +3066,9 @@ packages:
   '@remix-run/web-stream@1.1.0':
     resolution: {integrity: sha512-KRJtwrjRV5Bb+pM7zxcTJkhIqWWSy+MYsIxHK+0m5atcznsf15YwUBWHWulZerV2+vvHH1Lp1DD7pw6qKW8SgA==}
 
+  '@rolldown/pluginutils@1.0.0-beta.9':
+    resolution: {integrity: sha512-e9MeMtVWo186sgvFFJOPGy7/d2j2mZhLJIdVW0C/xDluuOvymEATqz6zKsP0ZmXGzQtqlyjz5sC1sYQUoJG98w==}
+
   '@rollup/rollup-android-arm-eabi@4.40.0':
     resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
     cpu: [arm]
@@ -3570,8 +3573,8 @@ packages:
   '@vanilla-extract/private@1.0.6':
     resolution: {integrity: sha512-ytsG/JLweEjw7DBuZ/0JCN4WAQgM9erfSTdS1NQY778hFQSZ6cfCDEZZ0sgVm4k54uNz6ImKB33AYvSR//fjxw==}
 
-  '@vitejs/plugin-react-swc@3.9.0':
-    resolution: {integrity: sha512-jYFUSXhwMCYsh/aQTgSGLIN3Foz5wMbH9ahb0Zva//UzwZYbMiZd7oT3AU9jHT9DLswYDswsRwPU9jVF3yA48Q==}
+  '@vitejs/plugin-react-swc@3.10.0':
+    resolution: {integrity: sha512-ZmkdHw3wo/o/Rk05YsXZs/DJAfY2CdQ5DUAjoWji+PEr+hYADdGMCGgEAILbiKj+CjspBTuTACBcWDrmC8AUfw==}
     peerDependencies:
       vite: ^4 || ^5 || ^6
 
@@ -10135,6 +10138,8 @@ snapshots:
     dependencies:
       web-streams-polyfill: 3.3.3
 
+  '@rolldown/pluginutils@1.0.0-beta.9': {}
+
   '@rollup/rollup-android-arm-eabi@4.40.0':
     optional: true
 
@@ -10652,8 +10657,9 @@ snapshots:
 
   '@vanilla-extract/private@1.0.6': {}
 
-  '@vitejs/plugin-react-swc@3.9.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))':
+  '@vitejs/plugin-react-swc@3.10.0(@swc/helpers@0.5.17)(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1))':
     dependencies:
+      '@rolldown/pluginutils': 1.0.0-beta.9
       '@swc/core': 1.11.22(@swc/helpers@0.5.17)
       vite: 6.3.5(@types/node@22.15.21)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.1)
     transitivePeerDependencies:
