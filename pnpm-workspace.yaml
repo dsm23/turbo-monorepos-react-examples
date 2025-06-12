@@ -1,3 +1,7 @@
 packages:
   - "apps/*"
   - "packages/*"
+publicHoistPattern:
+  - "*eslint*"
+  - "*prettier*"
+  - "*stylelint*"
