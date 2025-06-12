@@ -25,8 +25,6 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
-// import tailwind from "eslint-plugin-tailwindcss";
-
 /** @type {import("eslint").Linter.Config} */
 export default tseslint.config(
   {
@@ -51,7 +49,6 @@ export default tseslint.config(
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   react.configs.flat["jsx-runtime"],
-  // ...tailwind.configs["flat/recommended"],
   {
     files: ["**/*.{js,md,mdx,mjs,ts,tsx}"],
     languageOptions: {
