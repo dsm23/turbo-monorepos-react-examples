@@ -5,13 +5,13 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "8.35.0",
-    "@typescript-eslint/parser": "8.35.0",
+    "@typescript-eslint/eslint-plugin": "8.35.1",
+    "@typescript-eslint/parser": "8.35.1",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
     "globals": "16.2.0",
-    "typescript-eslint": "8.35.0"
+    "typescript-eslint": "8.35.1"
   },
   "publishConfig": {
     "access": "public"
