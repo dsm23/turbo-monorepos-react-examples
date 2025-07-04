@@ -6,7 +6,7 @@ test("has title", async ({ page }) => {
   await expect(page).toHaveTitle("Vercel Badge example");
 });
 
-test.skip("has heading", async ({ page }) => {
+test("has heading", async ({ page }) => {
   await page.goto("/");
 
   await expect(
