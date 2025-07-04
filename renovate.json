@@ -36,6 +36,10 @@
         "mcr.microsoft.com/playwright"
       ],
       "matchUpdateTypes": ["digest", "patch", "minor", "major"]
+    },
+    {
+      "groupName": "three.js monorepo",
+      "matchPackageNames": ["three", "@types/three", "@react-three/**"]
     }
   ],
   "patch": {
