@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+.next
 .turbo
 *.log
 coverage
@@ -26,3 +27,7 @@ test-results/
 playwright-report/
 blob-report/
 playwright/.cache/
+
+# storybook
+*storybook.log
+storybook-static

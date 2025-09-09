@@ -1,4 +1,4 @@
-export * from "./components/Button";
+export * from "./components/button";
 export * from "./components/dark-mode";
 export * from "./components/dropdown";
 export * from "./components/input";
