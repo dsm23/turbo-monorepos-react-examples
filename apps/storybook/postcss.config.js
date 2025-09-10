@@ -1,1 +1,1 @@
-export { default } from "@repo/react-ui/postcss.config";
+export { default } from "@repo/postcss-config/postcss.config";

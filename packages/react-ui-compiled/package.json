@@ -29,7 +29,6 @@
     "@repo/common-utils": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/cli": "4.1.13",
     "@types/jest": "30.0.0",
