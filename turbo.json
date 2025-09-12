@@ -19,10 +19,15 @@
     "lint:lint-staged": {
       "dependsOn": ["^lint"]
     },
-
-    "test": {},
+    "test": {
+      "dependsOn": ["transit", "@repo/vitest-config#build"]
+    },
     "coverage": {
+      "dependsOn": ["transit", "@repo/vitest-config#build"],
       "outputs": ["coverage/**"]
+    },
+    "transit": {
+      "dependsOn": ["^transit"]
     },
     "e2e": {
       "outputs": ["test-results/**"],

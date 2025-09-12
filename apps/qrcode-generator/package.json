@@ -34,6 +34,7 @@
     "@repo/stylelint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/vitest-config": "workspace:*",
     "@tailwindcss/vite": "4.1.13",
     "@testing-library/jest-dom": "6.8.0",
     "@testing-library/react": "16.3.0",
@@ -56,6 +57,7 @@
     "typed-query-selector": "2.12.0",
     "typescript": "5.9.2",
     "vite": "7.1.5",
+    "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.2.4"
   }
 }

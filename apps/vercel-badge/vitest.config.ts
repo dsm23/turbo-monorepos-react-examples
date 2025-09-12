@@ -8,6 +8,7 @@ import {
   mergeConfig,
 } from "vitest/config";
 import viteConfig from "./vite.config";
+import sharedConfig from "@repo/vitest-config";
 
 const testMatchPattern = "**/?(*.)+(spec|test).?(c|m)[jt]s?(x)";
 
@@ -16,7 +17,7 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
-      globals: false,
+      ...sharedConfig.test,
       environment: "jsdom",
       setupFiles: "./src/vitestSetup.ts",
       deps: {
@@ -30,7 +31,7 @@ export default mergeConfig(
       include: [testMatchPattern],
       exclude: [...defaultExclude, "**/playwright-tests/**"],
       coverage: {
-        all: false,
+        ...sharedConfig.test.coverage,
         include: ["src/**"],
         exclude: [
           "**/test-utils/**",
