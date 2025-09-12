@@ -20,7 +20,7 @@
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@vitest/coverage-istanbul": "3.2.4",
-    "glob": "11.0.1",
+    "glob": "11.0.3",
     "jsdom": "26.0.0",
     "nyc": "17.1.0",
     "typescript": "5.9.2",
