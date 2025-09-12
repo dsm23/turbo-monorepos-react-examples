@@ -20,9 +20,6 @@ importers:
       '@repo/vitest-config':
         specifier: workspace:*
         version: link:packages/config-vitest
-      eslint:
-        specifier: 9.35.0
-        version: 9.35.0(jiti@2.5.1)
       husky:
         specifier: 9.1.7
         version: 9.1.7
