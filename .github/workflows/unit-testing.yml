@@ -51,10 +51,28 @@ jobs:
         env:
           FORCE_COLOR: 1
 
+      - name: Upload coverage report
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: coverage-prev
+          path: packages/config-vitest/coverage/report/coverage-summary.json
+
+      - name: Download previous coverage report
+        # renovate: datasource=github-releases depName=dawidd6/action-download-artifact
+        uses: dawidd6/action-download-artifact@20319c5641d495c8a52e688b7dc5fada6c3a9fbc # v11
+        if: success() && github.event.number
+        with:
+          name: coverage-prev
+          workflow: unit-testing.yml
+          branch: ${{ github.event.pull_request.base.ref || github.event.repository.default_branch }}
+          path: ./coverage-prev
+
       - name: Coverage in GitHub PR comment
         uses: davelosert/vitest-coverage-report-action@8ab049ff5a2c6e78f78af446329379b318544a1a # v2.8.3
         with:
           file-coverage-mode: all
           json-final-path: ${{ github.workspace }}/packages/config-vitest/coverage/merged/merged-coverage.json
           json-summary-path: ${{ github.workspace }}/packages/config-vitest/coverage/report/coverage-summary.json
+          json-summary-compare-path: |
+            ${{ github.event_name == 'pull_request' && 'coverage-prev/coverage-summary.json' || null }}
           vite-config-path: ${{ github.workspace }}/packages/config-vitest/vitest.config.ts
