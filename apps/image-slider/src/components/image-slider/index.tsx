@@ -1,10 +1,10 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
-import ArrowLeftIcon from "../arrow-left-icon";
-import ArrowRightIcon from "../arrow-right-icon";
-import type { Image } from "~/types";
 import { cn } from "@repo/common-utils";
 import { Button } from "@repo/react-ui";
+import type { Image } from "~/types";
+import ArrowLeftIcon from "../arrow-left-icon";
+import ArrowRightIcon from "../arrow-right-icon";
 
 type Props = {
   images: Image[];

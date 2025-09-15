@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
+import { afterEach } from "vitest";
 import { cleanup, render } from "@testing-library/react";
 import type { Queries, RenderOptions } from "@testing-library/react";
-import { afterEach } from "vitest";
 
 afterEach(() => {
   cleanup();

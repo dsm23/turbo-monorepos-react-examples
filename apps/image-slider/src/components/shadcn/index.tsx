@@ -8,11 +8,10 @@ import {
   useState,
 } from "react";
 import type { ComponentProps, KeyboardEvent } from "react";
-import useEmblaCarousel, {
-  type UseEmblaCarouselType,
-} from "embla-carousel-react";
 import { cn } from "@repo/common-utils";
 import { Button } from "@repo/react-ui";
+import useEmblaCarousel from "embla-carousel-react";
+import type { UseEmblaCarouselType } from "embla-carousel-react";
 import ArrowLeftIcon from "~/components/arrow-left-icon";
 import ArrowRightIcon from "~/components/arrow-right-icon";
 

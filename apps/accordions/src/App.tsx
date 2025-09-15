@@ -1,12 +1,12 @@
 import { ThemeProvider } from "@repo/react-ui";
 import CrapAccordian from "~/components/barebones-accordion";
+import Navbar from "~/components/navbar";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "~/components/shadcn-accordion";
-import Navbar from "~/components/navbar";
 import type { Data } from "~/types";
 
 const data: Data[] = [

@@ -1,7 +1,8 @@
 import { ThemeProvider } from "@repo/react-ui";
-import * as Shadcn from "~/components/shadcn-tabs";
-import Navbar from "~/components/navbar";
 import * as ReactTabs from "react-tabs";
+import Navbar from "~/components/navbar";
+import * as Shadcn from "~/components/shadcn-tabs";
+
 import "react-tabs/style/react-tabs.css";
 
 // type Data = {

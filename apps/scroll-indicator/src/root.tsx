@@ -6,16 +6,15 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
+import { cn } from "@repo/common-utils";
 import {
   PreventFlashOnWrongTheme,
   ThemeProvider,
   useTheme,
 } from "remix-themes";
-import { cn } from "@repo/common-utils";
-import { themeSessionResolver } from "~/sessions.server";
+import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import Navbar from "~/components/navbar";
-
+import { themeSessionResolver } from "~/sessions.server";
 import stylesheet from "~/style.css?url";
 
 export const links: LinksFunction = () => [

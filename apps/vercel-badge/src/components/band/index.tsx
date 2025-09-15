@@ -2,21 +2,20 @@
 /* eslint-disable */
 // @ts-nocheck
 
-import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import type { FunctionComponent, PointerEventHandler } from "react";
-import { extend, useThree, useFrame } from "@react-three/fiber";
 import { useGLTF, useTexture } from "@react-three/drei";
+import { extend, useFrame, useThree } from "@react-three/fiber";
 import {
   BallCollider,
   CuboidCollider,
-  type RapierRigidBody,
   RigidBody,
-  type RigidBodyOptions,
   useRopeJoint,
   useSphericalJoint,
 } from "@react-three/rapier";
 import { MeshLineGeometry, MeshLineMaterial } from "meshline";
+import * as THREE from "three";
+import type { RapierRigidBody, RigidBodyOptions } from "@react-three/rapier";
 
 type Props = {
   maxSpeed?: number;

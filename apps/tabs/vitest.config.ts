@@ -7,8 +7,8 @@ import {
   defineConfig,
   mergeConfig,
 } from "vitest/config";
-import viteConfig from "./vite.config";
 import sharedConfig from "@repo/vitest-config";
+import viteConfig from "./vite.config";
 
 const testMatchPattern = "**/?(*.)+(spec|test).?(c|m)[jt]s?(x)";
 

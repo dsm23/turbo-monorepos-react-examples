@@ -66,6 +66,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -128,7 +131,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -277,7 +280,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -339,6 +342,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -404,7 +410,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -460,6 +466,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -507,7 +516,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -578,6 +587,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -643,7 +655,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -702,6 +714,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -764,7 +779,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -914,6 +929,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -976,7 +994,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -1035,6 +1053,9 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -1097,7 +1118,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -1171,6 +1192,9 @@ importers:
         specifier: 0.180.0
         version: 0.180.0
     devDependencies:
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: 4.7.0
+        version: 4.7.0(prettier@3.6.2)
       '@playwright/test':
         specifier: 1.55.0
         version: 1.55.0
@@ -1236,7 +1260,7 @@ importers:
         version: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
       prettier-plugin-tailwindcss:
         specifier: 0.6.14
-        version: 0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
+        version: 0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2)
       stylelint:
         specifier: 16.24.0
         version: 16.24.0(typescript@5.9.2)
@@ -2509,6 +2533,24 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@ianvs/prettier-plugin-sort-imports@4.7.0':
+    resolution: {integrity: sha512-soa2bPUJAFruLL4z/CnMfSEKGznm5ebz29fIa9PxYtu8HHyLKNE1NXAs6dylfw1jn/ilEIfO2oLLN6uAafb7DA==}
+    peerDependencies:
+      '@prettier/plugin-oxc': ^0.0.4
+      '@vue/compiler-sfc': 2.7.x || 3.x
+      content-tag: ^4.0.0
+      prettier: 2 || 3 || ^4.0.0-0
+      prettier-plugin-ember-template-tag: ^2.1.0
+    peerDependenciesMeta:
+      '@prettier/plugin-oxc':
+        optional: true
+      '@vue/compiler-sfc':
+        optional: true
+      content-tag:
+        optional: true
+      prettier-plugin-ember-template-tag:
+        optional: true
 
   '@img/sharp-darwin-arm64@0.34.3':
     resolution: {integrity: sha512-ryFMfvxxpQRsgZJqBd4wsttYQbCxsJksrv9Lw/v798JcQ8+w84mBWuXwl+TT0WJ/WrYOLaYpwQXi3sA9nTIaIg==}
@@ -9350,14 +9392,14 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.27.5
+      '@babel/generator': 7.28.3
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-module-transforms': 7.27.3(@babel/core@7.27.4)
       '@babel/helpers': 7.27.6
-      '@babel/parser': 7.27.5
+      '@babel/parser': 7.28.3
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.27.4
-      '@babel/types': 7.27.6
+      '@babel/traverse': 7.28.3
+      '@babel/types': 7.28.2
       convert-source-map: 2.0.0
       debug: 4.4.1
       gensync: 1.0.0-beta.2
@@ -9388,8 +9430,8 @@ snapshots:
 
   '@babel/generator@7.27.5':
     dependencies:
-      '@babel/parser': 7.27.5
-      '@babel/types': 7.27.6
+      '@babel/parser': 7.28.3
+      '@babel/types': 7.28.2
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
       jsesc: 3.0.2
@@ -9510,7 +9552,7 @@ snapshots:
 
   '@babel/parser@7.27.5':
     dependencies:
-      '@babel/types': 7.27.6
+      '@babel/types': 7.28.2
 
   '@babel/parser@7.28.3':
     dependencies:
@@ -9671,10 +9713,10 @@ snapshots:
   '@babel/traverse@7.27.4':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.27.5
-      '@babel/parser': 7.27.5
+      '@babel/generator': 7.28.3
+      '@babel/parser': 7.28.3
       '@babel/template': 7.27.2
-      '@babel/types': 7.27.6
+      '@babel/types': 7.28.2
       debug: 4.4.1
       globals: 11.12.0
     transitivePeerDependencies:
@@ -10214,6 +10256,17 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2)':
+    dependencies:
+      '@babel/generator': 7.28.3
+      '@babel/parser': 7.28.3
+      '@babel/traverse': 7.28.3
+      '@babel/types': 7.28.2
+      prettier: 3.6.2
+      semver: 7.7.2
+    transitivePeerDependencies:
+      - supports-color
 
   '@img/sharp-darwin-arm64@0.34.3':
     optionalDependencies:
@@ -16165,10 +16218,11 @@ snapshots:
     transitivePeerDependencies:
       - postcss
 
-  prettier-plugin-tailwindcss@0.6.14(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2):
+  prettier-plugin-tailwindcss@0.6.14(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.6.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.2))(prettier@3.6.2):
     dependencies:
       prettier: 3.6.2
     optionalDependencies:
+      '@ianvs/prettier-plugin-sort-imports': 4.7.0(prettier@3.6.2)
       prettier-plugin-css-order: 2.1.2(postcss@8.5.6)(prettier@3.6.2)
 
   prettier@2.8.8: {}

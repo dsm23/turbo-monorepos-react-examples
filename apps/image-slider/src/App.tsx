@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "@repo/react-ui";
 import ImageSlider from "~/components/image-slider";
-import Navbar from "./components/navbar";
 import {
   Carousel,
   CarouselContent,
@@ -10,6 +9,7 @@ import {
   CarouselPrevious,
 } from "~/components/shadcn";
 import type { Image } from "~/types";
+import Navbar from "./components/navbar";
 
 type Data = {
   id: string;
