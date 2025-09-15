@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { ChangeEventHandler, FormEventHandler } from "react";
+import { Button, Input, Label } from "@repo/react-ui";
 import QRCode from "qrcode";
-import { Button, Label, Input } from "@repo/react-ui";
 
 const Form = () => {
   const [qrCode, setQrCode] = useState("");

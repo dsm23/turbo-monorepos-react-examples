@@ -1,7 +1,7 @@
-import MenuList from "~/components/menu-list";
-import Navbar from "./components/navbar";
-import type { Data } from "~/types";
 import { ThemeProvider } from "@repo/react-ui";
+import MenuList from "~/components/menu-list";
+import type { Data } from "~/types";
+import Navbar from "./components/navbar";
 
 const menus: Data[] = [
   {

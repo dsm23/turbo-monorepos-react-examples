@@ -1,8 +1,8 @@
-import { Canvas } from "@react-three/fiber";
 import { Environment, Lightformer } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import { Physics } from "@react-three/rapier";
-import { useControls } from "leva";
 import { ThemeProvider } from "@repo/react-ui";
+import { useControls } from "leva";
 import Band from "~/components/band";
 import Navbar from "~/components/navbar";
 

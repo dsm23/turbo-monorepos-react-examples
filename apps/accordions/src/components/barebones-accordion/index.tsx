@@ -1,8 +1,8 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
 import { Transition } from "@headlessui/react";
-import { Button } from "@repo/react-ui";
 import { cn } from "@repo/common-utils";
+import { Button } from "@repo/react-ui";
 import ChevronDownIcon from "~/components/chevron-down-icon";
 import type { Data } from "~/types";
 

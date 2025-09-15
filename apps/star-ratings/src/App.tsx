@@ -1,6 +1,6 @@
+import { ThemeProvider } from "@repo/react-ui";
 import StarRating from "~/components/star-rating";
 import Navbar from "./components/navbar";
-import { ThemeProvider } from "@repo/react-ui";
 
 const App = () => (
   <ThemeProvider storageKey="star-ratings-example">

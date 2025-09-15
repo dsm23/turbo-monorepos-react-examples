@@ -1,6 +1,6 @@
-import { cn } from "@repo/common-utils";
 import { useState } from "react";
 import type { FunctionComponent } from "react";
+import { cn } from "@repo/common-utils";
 import Star from "~/components/star-icon";
 
 type Props = {

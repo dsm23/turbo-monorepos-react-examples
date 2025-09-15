@@ -1,4 +1,3 @@
-import { Theme, useTheme } from "remix-themes";
 import {
   Button,
   DropdownMenu,
@@ -8,6 +7,7 @@ import {
   MoonIcon,
   SunIcon,
 } from "@repo/react-ui";
+import { Theme, useTheme } from "remix-themes";
 
 export function ModeToggle() {
   const [, setTheme] = useTheme();
