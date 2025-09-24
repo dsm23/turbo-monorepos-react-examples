@@ -14,7 +14,7 @@
     "./storybook": "./storybook.js"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "15.5.3",
+    "@next/eslint-plugin-next": "15.5.4",
     "@typescript-eslint/eslint-plugin": "8.44.1",
     "@typescript-eslint/parser": "8.44.1",
     "eslint-config-prettier": "10.1.8",
