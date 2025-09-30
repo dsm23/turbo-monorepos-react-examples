@@ -23,7 +23,7 @@
     "glob": "11.0.3",
     "jsdom": "27.0.0",
     "nyc": "17.1.0",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "vite-tsconfig-paths": "5.1.4"
   }
 }
