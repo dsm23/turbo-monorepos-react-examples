@@ -27,7 +27,7 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@storybook/nextjs-vite": "9.1.10",
-    "@tailwindcss/cli": "4.1.13",
+    "@tailwindcss/cli": "4.1.14",
     "@types/react": "19.1.16",
     "npm-run-all2": "8.0.4",
     "storybook": "9.1.10",
