@@ -28,7 +28,7 @@
     "@repo/typescript-config": "workspace:*",
     "@storybook/nextjs-vite": "9.1.10",
     "@tailwindcss/cli": "4.1.14",
-    "@types/react": "19.2.0",
+    "@types/react": "19.2.1",
     "npm-run-all2": "8.0.4",
     "storybook": "9.1.10",
     "typescript": "5.9.3"
