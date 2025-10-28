@@ -35,7 +35,7 @@
     "@types/node": "24.9.2",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
-    "@vitejs/plugin-react": "5.0.4",
+    "@vitejs/plugin-react": "5.1.0",
     "eslint": "9.38.0",
     "npm-run-all2": "8.0.4",
     "prettier": "3.6.2",
