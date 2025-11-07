@@ -25,7 +25,7 @@
     "lint": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
-    "@radix-ui/react-slot": "1.2.3",
+    "@radix-ui/react-slot": "1.2.4",
     "@repo/common-utils": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
