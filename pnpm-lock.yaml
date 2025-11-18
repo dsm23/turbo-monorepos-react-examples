@@ -63,8 +63,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -212,8 +212,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@playwright/test':
         specifier: 1.56.1
@@ -339,8 +339,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -463,8 +463,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -584,8 +584,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4(react-router@6.30.0(react@19.2.0))
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -711,8 +711,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -826,8 +826,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@chromatic-com/storybook':
         specifier: 4.1.2
@@ -926,8 +926,8 @@ importers:
         specifier: 6.1.0
         version: 6.1.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -1050,8 +1050,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.7.0
@@ -1186,8 +1186,8 @@ importers:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
       three:
         specifier: 0.181.0
         version: 0.181.0
@@ -1326,8 +1326,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       tailwind-merge:
-        specifier: 3.3.1
-        version: 3.3.1
+        specifier: 3.4.0
+        version: 3.4.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -8379,8 +8379,8 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tailwind-merge@3.3.1:
-    resolution: {integrity: sha512-gBXpgUm/3rp1lMZZrM/w7D8GKqshif0zAymAhbCyIt8KMe+0v9DQ7cdYLR4FHH/cKpdTXb+A/tKKU3eolfsI+g==}
+  tailwind-merge@3.4.0:
+    resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
 
   tailwindcss@4.1.17:
     resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
@@ -16828,7 +16828,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwind-merge@3.3.1: {}
+  tailwind-merge@3.4.0: {}
 
   tailwindcss@4.1.17: {}
 
