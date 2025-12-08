@@ -21,7 +21,7 @@
     "@radix-ui/react-slot": "1.2.4",
     "@repo/common-utils": "workspace:*",
     "class-variance-authority": "0.7.1",
-    "react": "19.2.0"
+    "react": "19.2.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
