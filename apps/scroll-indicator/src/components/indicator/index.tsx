@@ -5,13 +5,13 @@ type Props = {
 };
 
 const HorizontalIndicator: FunctionComponent<Props> = ({
-  scrollPercentage = 0,
+  scrollPercentage,
 }) => (
   <div className="fixed top-0 h-2 w-full bg-transparent">
     <div
       className="bg-secondary-foreground h-2"
       style={{
-        width: `${scrollPercentage}%`,
+        width: `${scrollPercentage || 0}%`,
       }}
     />
   </div>
