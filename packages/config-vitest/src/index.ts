@@ -7,9 +7,7 @@ const config = {
   plugins: [tsconfigPaths()],
   test: {
     globals: false,
-    coverage: {
-      all: true,
-    },
+    coverage: {},
     // coverage: {
     //   provider: "istanbul",
     //   reporter: [
