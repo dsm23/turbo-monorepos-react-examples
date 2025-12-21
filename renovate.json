@@ -66,6 +66,10 @@
     {
       "groupName": "three.js monorepo",
       "matchPackageNames": ["three", "@types/three", "@react-three/**"]
+    },
+    {
+      "groupName": "turbo monorepo",
+      "matchPackageNames": ["@turbo/**", "eslint-plugin-turbo", "turbo"]
     }
   ],
   "patch": {
