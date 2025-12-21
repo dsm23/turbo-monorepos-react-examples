@@ -25,6 +25,10 @@ vi.stubGlobal("matchMedia", (query: string) => ({
   dispatchEvent: vi.fn(),
 }));
 
+vi.mock("leva", () => ({
+  useControls: () => ({ debug: false }),
+}));
+
 describe("component", () => {
   describe("App", () => {
     it("should render correctly", () => {
