@@ -7,10 +7,12 @@ import Band from "~/components/band";
 import Navbar from "~/components/navbar";
 
 const App = () => {
-  const { debug } = useControls({ debug: false });
+  const { debug } = useControls({
+    debug: false,
+  });
 
   return (
-    <ThemeProvider storageKey="tabs-example">
+    <ThemeProvider storageKey="vercel-badge-example">
       <Navbar />
       <main className="h-screen">
         <h1 className="sr-only">Vercel badge</h1>
