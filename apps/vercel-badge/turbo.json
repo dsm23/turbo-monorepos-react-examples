@@ -1,0 +1,17 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "coverage": {
+      "dependsOn": ["^coverage", "@repo/react-ui#build"]
+    },
+    "dev": {
+      "with": ["@repo/react-ui#dev"]
+    },
+    "e2e": {
+      "dependsOn": ["^e2e", "@repo/react-ui#build"]
+    },
+    "lint": {
+      "dependsOn": ["^lint", "@repo/react-ui#build"]
+    }
+  }
+}

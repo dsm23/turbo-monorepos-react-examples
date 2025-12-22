@@ -4,33 +4,132 @@
   "type": "module",
   "sideEffects": false,
   "files": [
+    "dist/**",
     "dist"
   ],
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "import": {
+        "types": "./dist/es/index.d.ts",
+        "default": "./dist/es/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    },
+    "./components/button": {
+      "import": {
+        "types": "./dist/es/button.d.ts",
+        "default": "./dist/es/button.js"
+      },
+      "require": {
+        "types": "./dist/cjs/button.d.cts",
+        "default": "./dist/cjs/button.cjs"
+      }
+    },
+    "./components/dark-mode/theme-provider": {
+      "import": {
+        "types": "./dist/es/theme-provider.d.ts",
+        "default": "./dist/es/theme-provider.js"
+      },
+      "require": {
+        "types": "./dist/cjs/theme-provider.d.cts",
+        "default": "./dist/cjs/theme-provider.cjs"
+      }
+    },
+    "./components/dark-mode/toggle": {
+      "import": {
+        "types": "./dist/es/toggle.d.ts",
+        "default": "./dist/es/toggle.js"
+      },
+      "require": {
+        "types": "./dist/cjs/toggle.d.cts",
+        "default": "./dist/cjs/toggle.cjs"
+      }
+    },
+    "./components/dropdown": {
+      "import": {
+        "types": "./dist/es/dropdown.d.ts",
+        "default": "./dist/es/dropdown.js"
+      },
+      "require": {
+        "types": "./dist/cjs/dropdown.d.cts",
+        "default": "./dist/cjs/dropdown.cjs"
+      }
+    },
+    "./components/input": {
+      "import": {
+        "types": "./dist/es/input.d.ts",
+        "default": "./dist/es/input.js"
+      },
+      "require": {
+        "types": "./dist/cjs/input.d.cts",
+        "default": "./dist/cjs/input.cjs"
+      }
+    },
+    "./components/label": {
+      "import": {
+        "types": "./dist/es/label.d.ts",
+        "default": "./dist/es/label.js"
+      },
+      "require": {
+        "types": "./dist/cjs/label.d.cts",
+        "default": "./dist/cjs/label.cjs"
+      }
+    },
+    "./components/moon-icon": {
+      "import": {
+        "types": "./dist/es/moon-icon.d.ts",
+        "default": "./dist/es/moon-icon.js"
+      },
+      "require": {
+        "types": "./dist/cjs/moon-icon.d.cts",
+        "default": "./dist/cjs/moon-icon.cjs"
+      }
+    },
+    "./components/sun-icon": {
+      "import": {
+        "types": "./dist/es/sun-icon.d.ts",
+        "default": "./dist/es/sun-icon.js"
+      },
+      "require": {
+        "types": "./dist/cjs/sun-icon.d.cts",
+        "default": "./dist/cjs/sun-icon.cjs"
+      }
+    }
   },
   "license": "MIT",
   "scripts": {
+    "build": "bunchee",
+    "dev": "bunchee --watch",
+    "lint:bunchee": "bunchee lint",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\" --report-unused-disable-directives --max-warnings 0",
-    "lint": "run-p lint:js",
+    "lint": "run-p lint:bunchee lint:js",
     "type-check": "tsc --noEmit"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@radix-ui/react-dropdown-menu": "2.1.16",
     "@radix-ui/react-label": "2.1.8",
     "@radix-ui/react-slot": "1.2.4",
     "@repo/common-utils": "workspace:*",
+    "@swc/helpers": "0.5.17",
     "class-variance-authority": "0.7.1",
-    "react": "19.2.3"
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.4.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@storybook/nextjs-vite": "10.1.10",
-    "@tailwindcss/cli": "4.1.18",
     "@types/react": "19.2.7",
+    "bunchee": "6.6.2",
     "npm-run-all2": "8.0.4",
     "storybook": "10.1.10",
     "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "@types/react": "19.2.7",
+    "react": "19.2.3"
   }
 }
