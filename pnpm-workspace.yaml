@@ -1,6 +1,10 @@
+onlyBuiltDependencies:
+  - "@swc/core"
+
 packages:
   - "apps/*"
   - "packages/*"
+
 publicHoistPattern:
   - "*eslint*"
   - "*prettier*"
