@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "16.1.0",
-    "@typescript-eslint/eslint-plugin": "8.50.0",
-    "@typescript-eslint/parser": "8.50.0",
+    "@typescript-eslint/eslint-plugin": "8.50.1",
+    "@typescript-eslint/parser": "8.50.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-only-warn": "1.1.0",
     "eslint-plugin-react": "7.37.5",
@@ -25,6 +25,6 @@
     "eslint-plugin-storybook": "10.1.10",
     "eslint-plugin-turbo": "2.7.1",
     "globals": "16.5.0",
-    "typescript-eslint": "8.50.0"
+    "typescript-eslint": "8.50.1"
   }
 }
