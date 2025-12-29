@@ -46,7 +46,7 @@
     "@vitest/coverage-v8": "4.0.16",
     "eslint": "9.39.2",
     "jsdom": "27.4.0",
-    "msw": "2.12.4",
+    "msw": "2.12.6",
     "npm-run-all2": "8.0.4",
     "prettier": "3.7.4",
     "prettier-plugin-css-order": "2.1.2",
