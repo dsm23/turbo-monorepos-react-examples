@@ -1486,8 +1486,8 @@ importers:
         specifier: 19.2.7
         version: 19.2.7
       bunchee:
-        specifier: 6.7.0
-        version: 6.7.0(typescript@5.9.3)
+        specifier: 6.8.0
+        version: 6.8.0(typescript@5.9.3)
       npm-run-all2:
         specifier: 8.0.4
         version: 8.0.4
@@ -4290,8 +4290,8 @@ packages:
   buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
 
-  bunchee@6.7.0:
-    resolution: {integrity: sha512-tCTSm4okjArE/0FiuLUi5ITqNLlH6Ak2i+2sRxkBGt2PcuXYCvKwKV1zI3oQuvSNnItn3860O0S/sLnP7eIwpg==}
+  bunchee@6.8.0:
+    resolution: {integrity: sha512-FKy9k7zWuluTsauADBv9iyyGPIYrWUCaP8Y0Vx2blgVL6bl/HRwEMEMiXFQSuk3TZF2CIGotv4+/mXQFwfSaAw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -11346,7 +11346,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bunchee@6.7.0(typescript@5.9.3):
+  bunchee@6.8.0(typescript@5.9.3):
     dependencies:
       '@rollup/plugin-commonjs': 29.0.0(rollup@4.53.3)
       '@rollup/plugin-json': 6.1.0(rollup@4.53.3)
