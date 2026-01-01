@@ -121,11 +121,11 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@storybook/nextjs-vite": "10.1.10",
+    "@storybook/nextjs-vite": "10.1.11",
     "@types/react": "19.2.7",
     "bunchee": "6.8.2",
     "npm-run-all2": "8.0.4",
-    "storybook": "10.1.10",
+    "storybook": "10.1.11",
     "typescript": "5.9.3"
   },
   "peerDependencies": {
