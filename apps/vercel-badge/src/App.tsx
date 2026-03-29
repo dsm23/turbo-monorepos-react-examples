@@ -14,7 +14,7 @@ const App = () => {
   return (
     <ThemeProvider storageKey="vercel-badge-example">
       <Navbar />
-      <main className="h-screen">
+      <main>
         <h1 className="sr-only">Vercel badge</h1>
         <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
           <ambientLight intensity={Math.PI} />
